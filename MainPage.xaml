@@ -14,30 +14,38 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <StackPanel HorizontalAlignment="Center" Grid.Row="0">
-                <TextBlock Text="Shapeland" FontSize="30" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Text="Shapeland" FontSize="30" FontStyle="Italic" FontWeight="Bold" Margin="15"/>
             </StackPanel>
-            <Canvas x:Name="DisplayCanvas" Width="150" Height="150" Grid.Row="1">
-                
-            </Canvas>
+            <StackPanel HorizontalAlignment="Center" Grid.Row="1">
+                <Canvas x:Name="DisplayCanvas" Width="150" Height="150">
+                    <Image x:Name="DisplayImage" Source="ShapelandTitle.png"/>
+                </Canvas>
+            </StackPanel>
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="2">
                 <Button x:Name="AButton" Width="30" Height="30" Margin="30">
                     <Button.Content>
                         <Canvas Width="30" Height="30">
-                            
+                            <TextBlock x:Name="AButtonText" Text="Accept" FontSize="6" FontWeight="Bold" Canvas.Left="0" Canvas.Top="24"/>
+                            <TextBlock x:Name="AButtonSymbol" Text="a" FontFamily="Webdings" FontSize="15" Canvas.Left="9" Canvas.Top="6"/>
+                            <TextBlock x:Name="AButtonHotkey" Text="A" FontSize="9" FontWeight="Bold" Canvas.Left="0" Canvas.Top="0"/>
                         </Canvas>
                     </Button.Content>
                 </Button>
                 <Button x:Name="SButton" Width="30" Height="30" Margin="30">
                     <Button.Content>
                         <Canvas Width="30" Height="30">
-                            
+                            <TextBlock x:Name="SButtonText" Text="Support" FontSize="6" FontWeight="Bold" Canvas.Left="0" Canvas.Top="24"/>
+                            <TextBlock x:Name="SButtonSymbol" Text="s" FontFamily="Webdings" FontSize="15" Canvas.Left="9" Canvas.Top="6"/>
+                            <TextBlock x:Name="sButtonHotkey" Text="S" FontSize="9" FontWeight="Bold" Canvas.Left="0" Canvas.Top="0"/>
                         </Canvas>
                     </Button.Content>
                 </Button>
                 <Button x:Name="DButton" Width="30" Height="30" Margin="30">
                     <Button.Content>
                         <Canvas Width="30" Height="30">
-                            
+                            <TextBlock x:Name="DButtonText" Text="Discrete" FontSize="6" FontWeight="Bold" Canvas.Left="0" Canvas.Top="24"/>
+                            <TextBlock x:Name="DButtonSymbol" Text="d" FontFamily="Webdings" FontSize="15" Canvas.Left="9" Canvas.Top="6"/>
+                            <TextBlock x:Name="DButtonHotkey" Text="D" FontSize="9" FontWeight="Bold" Canvas.Left="0" Canvas.Top="0"/>
                         </Canvas>
                     </Button.Content>
                 </Button>

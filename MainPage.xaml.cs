@@ -13,7 +13,6 @@ namespace Shapeland
         public MainPage()
         {
             InitializeComponent();
-
             DisplayScrollViewer.SizeChanged += DisplayScrollViewer_SizeChanged;
         }
         private void DisplayScrollViewer_SizeChanged(object sender, SizeChangedEventArgs e)
